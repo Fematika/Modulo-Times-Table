@@ -65,7 +65,7 @@ function draw() {
 	}
 	
 	text("Multiplier:", width / 2 - height / 2 - 10, -8);
-	text("Number of Points:", width / 2 - height / 2 - 60, 36);
+	text("Number of Points:", width / 2 - height / 2 - 45, 36);
 	
 	if (pointsInput.value() == parseFloat(pointsInput.value()) && parseFloat(pointsInput.value()) <= 5000) {
 		numPoints = parseFloat(pointsInput.value());

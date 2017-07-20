@@ -25,7 +25,7 @@ function setup() {
 	pointsSlider.position(width / 2 + pointsInput.width + 100, height / 2 + 24);
 	
 	animate = createButton("Animate");
-	animate.position(width / 2, height / 2);
+	animate.position(pointsSlider.x + pointsSlider.width + 50, height / 2);
 	animate.mousePressed(doAnimate);
 	
 	for (i = 0; i < numPoints; i ++) {
@@ -41,7 +41,7 @@ function draw() {
 	background(255);
 	translate(height / 2, height / 2);
 	
-	ellipse(0, 0, height, height);
+	ellipse(0, 0, height - 20, height - 20);
 	
 	var preMultVal = mult;
 	var prePointsVal = numPoints;
@@ -63,8 +63,8 @@ function draw() {
 		multInput.value(mult.toFixed(2))
 	}
 	
-	text("Multiplier:", width / 2 - height / 2 - 5, -10);
-	text("Number of Points:", width / 2 - height / 2 - 50, 38);
+	text("Multiplier:", width / 2 - height / 2 - 10, -10);
+	text("Number of Points:", width / 2 - height / 2 - 60, 38);
 	
 	if (pointsInput.value() == parseFloat(pointsInput.value()) && parseFloat(pointsInput.value()) <= 5000) {
 		numPoints = parseFloat(pointsInput.value());

@@ -40,6 +40,7 @@ function setup() {
 function draw() {
 	background(255);
 	translate(height / 2, height / 2);
+	textSize(10);
 	
 	ellipse(0, 0, height - 20, height - 20);
 	
@@ -63,8 +64,8 @@ function draw() {
 		multInput.value(mult.toFixed(2))
 	}
 	
-	text("Multiplier:", width / 2 - height / 2 - 10, -10);
-	text("Number of Points:", width / 2 - height / 2 - 60, 38);
+	text("Multiplier:", width / 2 - height / 2 - 10, -8);
+	text("Number of Points:", width / 2 - height / 2 - 60, 36);
 	
 	if (pointsInput.value() == parseFloat(pointsInput.value()) && parseFloat(pointsInput.value()) <= 5000) {
 		numPoints = parseFloat(pointsInput.value());

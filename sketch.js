@@ -80,7 +80,7 @@ function draw() {
 	for (i = 0; i < numPoints; i ++) {
 		var angle = (2 * i * PI) / numPoints;
 		
-		var posPoint = [- height / 2 * cos(angle), height / 2 * sin(angle)];
+		var posPoint = [- (height - 20) / 2 * cos(angle), (height - 20) / 2 * sin(angle)];
 		
 		points.push(posPoint);
 	}

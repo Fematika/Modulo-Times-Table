@@ -25,7 +25,7 @@ function setup() {
 	pointsSlider.position(width / 2 + pointsInput.width + 100, height / 2 + 24);
 	
 	animate = createButton("Animate");
-	animate.position(width - 40, height / 2);
+	animate.position(width - 100, height / 2);
 	animate.mousePressed(doAnimate);
 	
 	for (i = 0; i < numPoints; i ++) {

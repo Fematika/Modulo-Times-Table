@@ -31,7 +31,7 @@ function setup() {
 	for (i = 0; i < numPoints; i ++) {
 		var angle = (2 * i * PI) / numPoints;
 		
-		var posPoint = [- height / 2 * cos(angle), height / 2 * sin(angle)];
+		var posPoint = [- height / 4 * cos(angle), height / 4 * sin(angle)];
 		
 		points.push(posPoint);
 	}
@@ -42,7 +42,7 @@ function draw() {
 	translate(height / 2, height / 2);
 	textSize(10);
 	
-	ellipse(0, 0, height - 30, height - 30);
+	ellipse(0, 0, height/2, height/2);
 	
 	var preMultVal = mult;
 	var prePointsVal = numPoints;

@@ -42,8 +42,6 @@ function draw() {
 	translate(height / 2, height / 2);
 	textSize(10);
 	
-	ellipse(0, 0, height/2, height/2);
-	
 	var preMultVal = mult;
 	var prePointsVal = numPoints;
 	
